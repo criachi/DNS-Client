@@ -1,12 +1,12 @@
 # DNS-Client
 
-The program sends a DNS query to an authority server using a UDP socket and inteprets the response packet to output the response in a readable format.
+The program sends a DNS query to an authority server using a UDP socket and interprets the response packet to output the response in a readable format.
 
 The DNS Client is able to send queries for IP addresses, mail servers, and name servers. It can also retransmit queries that are lost. It also has error handling functionality that returns back an error message for common errors such as responses that do not match the query or fields or entries that cannot be interpreted. 
 
 Calling syntax: 
 ```
-java DnsClient [-t timeout] [-r max-retries] [-p port] [-mx|-ns] @servername
+java DnsClient [-t timeout] [-r max-retries] [-p port] [-mx|-ns] @server name
 ```
 
 where the arguments are defined as follows: 
